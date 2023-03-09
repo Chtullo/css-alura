@@ -36,6 +36,7 @@ body {
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
+    gap: 82px;
 }
 
 .apresentacao {
@@ -43,6 +44,7 @@ body {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -114,4 +116,23 @@ body {
 
 .cabecalho__menu__link:hover {
     background-color: var(--cor-hover);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 12%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center ;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
